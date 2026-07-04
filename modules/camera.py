@@ -133,7 +133,7 @@ if __name__ == "__main__":
     result = capture_image()
 
     if result:
-        print(f"Success! Processed image saved at: {result}")
+        print(f"Success! Processed image saved at: {resut}")
         img = Image.open(result)
         print(f"Final image size: {img.size}")
     else:

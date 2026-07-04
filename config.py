@@ -35,3 +35,10 @@ NETWORK_TIMEOUT_SECONDS = 2
 
 # ---- Misc ----
 LOG_DIR = os.path.join(BASE_DIR, "logs")
+
+# ---- Ensure required folders exist ----
+# Git doesn't track empty folders, so on a fresh clone these won't exist
+# yet. Create them automatically so the project runs without manual setup.
+os.makedirs(CAPTURE_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, "voices"), exist_ok=True)

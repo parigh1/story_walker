@@ -27,7 +27,7 @@ def main():
             break
 
         # Instant feedback so the user knows the button press registered
-        speak_fallback("Looking")
+        speak_fallback("Looking now, please wait")
 
         # Step 1: capture + process the photo
         image_path = capture_image()
