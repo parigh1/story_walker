@@ -52,8 +52,8 @@ def main():
                 t_first_sentence = time.time()
                 first_sentence_spoken = True
             speak_piper(sentence)
-
-        t_end = time.time()
+            t_sentence_end = time.time()
+            print(f"  Sentence {sentence_count} spoke in {t_sentence_end - t_sentence_start:.2f}s: \"{sentence[:50]}...\"")
 
         # ---- Print the timing breakdown ----
         print("\n--- TIMING BREAKDOWN ---")
