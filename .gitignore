@@ -1,5 +1,12 @@
-__pycache__/
-captures/
-*.jpg
-.env
+.venv/
 venv/
+.env
+captures/*.jpg
+captures/*.jpeg
+voices/*.onnx
+voices/*.onnx.json
+logs/*.log
+__pycache__/
+*.pyc
+.idea/
+*.wav
